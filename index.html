@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <img src="asset/kitty-removebg-preview.png" alt="Loading icon" class="loading-icon">
+            <p class="loading-text">Loading something special...</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <button id="start-btn" onclick="startExperience()">
+            ✨ Start Surprise ✨
+        </button>
+        </div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="perfect song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <section class="header-section">
+        <div class="polaroid-frame">
+            <img src="asset/main.jpg" class="floating-heart">
+        </div>
+        <div id="entry-overlay">
+</div>
+        <div class="heart-container left" id="hearts-left">
+            <img src="asset/images.jpg" class="heart-img">
+        </div>
+        <h1 id="typewriter"></h1>
+        <div class="heart-container right" id="hearts-right">
+            <img src="asset/images.jpg" class="heart-img">
+        </div>
+        <h2 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #d63384;">
+        Where it all began...
+        </h2>
+        <p style="font-size: 1.5rem; color: #555;">June 18, 2024 🗓️</p>
+        <p>Today is all about celebrating you and the joy you bring to my life.</p>
+        <button onclick="scrollToMemories()">See Our Memories</button>
+    </section>
+
+    <section id="memories" class="gallery-section">
+        <h2>Our Beautiful Memories</h2>
+        <div class="grid">
+            <div class="photo-card"><img src="asset/download.jpg" alt="Memory 1"></div>
+            <div class="photo-card"><img src="asset/images.jpg" alt="Memory 2"></div>
+            <div class="photo-card"><img src="asset/main.jpg" alt="Memory 3"></div>
+            <div class="photo-card"><img src="asset/samp1.jpg" alt="Memory 4"></div>
+            <div class="photo-card"><img src="asset/images.jpg" alt="Memory 5"></div>
+            <div class="photo-card"><img src="asset/main.jpg" alt="Memory 6"></div>
+            <div class="photo-card"><img src="asset/samp1.jpg" alt="Memory 6"></div>
+            <div class="photo-card"><img src="asset/download.jpg" alt="Memory 6"></div>
+        </div>
+        <section id="video-memories" class="gallery-section">
+            <h2>Moments in Motion 🎬</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/spidey.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/spidey.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/spidey.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/spidey.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/spidey.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/spidey.mp4" type="video/mp4">
+                    </video>
+                </div>
+                </div>
+        </section>
+    </section>
+
+    <section class="letter-section">
+        <button class="letter-btn" onclick="openLetter()">💌 Open My Letter</button>
+
+        <div class="letter-container" id="letterContainer">
+            <div class="video-wrapper" id="videoWrapper">
+                <video id="letterVideo" playsinline>
+                    <source src="asset/spidey.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="letter-envelope" id="letter">
+                <div class="letter-paper">
+                    <h3>My Love ❤️</h3>
+                    <p>
+                        Happy Birthday, Baby 💕<br>
+                        From the moment you came into my life, everything became brighter.
+                        Your smile, your kindness, and your love mean the world to me.
+                        <br><br>
+                        Yours forever 💖
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div class="message-box">
+            <h3>A Special Message for You</h3>
+            <p>June 18, 2024 se lekar aaj tak, har pal tumhare saath ek khoobsurat sapna lagta hai. Wo hamari dinner dates aur saath mein bitaye har lamhe mere liye sabse khaas hain. 🥂✨</p>
+            <div class="hearts">❤️❤️❤️</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
